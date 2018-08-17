@@ -1,22 +1,29 @@
-var translation = function(inputted){
+var translation = function(inputted) {
 	
 	var splitInput = inputted.split('');
 	var result = [];
 	var translatedResults;
 		
 	splitInput.forEach(function(number) {
-		var trans = '';
+		var translation = ('');
 			if (parseInt(number)% 3 === 0 && parseInt(number) > 0) {
-				trans = "I'm sorry, Dave. I'm afraid I can't do that.";
-			}else if (number === "0") {
-				trans = "Beep!";
-			}else if (number === "1") {
-				trans = "Boop!";
-			}else{			
-				trans= number;
+				translation = "I'm sorry, Dave. I'm afraid I can't do that.";
+			} else if (number === "0") {
+				translation = "Beep!";
+			} else if (number === "1") {
+				translation = "Boop!";
+			} else{			
+				translation = number;
 			}	
-			result.push(trans);
+			result.push(translation);
 	});
+	translatedResults = transString(result);
+	return translatedResults;
+};
+
+var transString = function (transInput) {
+	translatedResults = transInput.join("");
+	return translatedResults;
 };
 
 	
@@ -25,9 +32,7 @@ $(document).ready(function(){
 
 	$("form#formOne").submit(function(event){
 		event.preventDefault();
-		// var result = ("");
-		var userInput = $("#textInput").val();
-		 
+		var userInput = $("#textInput").val();		 
 		translatedResults = translation(userInput);
 	});
 
