@@ -10,6 +10,10 @@ var splitInput = userInput.split();
 			
 		if (splitInput.length[i] % 3 === 0) {
 			return ("I'm sorry, Dave. I'm afraid I can't do that.");
+		}else if (splitInput.length[i] === 1) {
+			return ("Boop!"); 
+		}else if (splitInput.length[i] === 0) {
+			return ("Beep!");
 			}else {
 				return false;
 			}
