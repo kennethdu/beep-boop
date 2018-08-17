@@ -3,6 +3,7 @@ var translation = function(input) {
 	var splitInput = input.split(); 
 	var result = [];
 	var translatedResults;
+	
 		
 	splitInput.forEach(function(number) {
 		var translate = '';
