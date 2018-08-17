@@ -33,5 +33,6 @@ $(document).ready(function(){
 		event.preventDefault();
 		var userInput = $("#textInput").val();		 
 		translatedResults = translation(userInput);
+		$("#result").text(translatedResults);
 	});
 });
