@@ -9,10 +9,10 @@ var translation = function(input) {
 		var translate = '';
 			if (parseInt(number)% 3 === 0 && parseInt(number) > 0) {
 				translate = "I'm sorry, Dave. I'm afraid I can't do that.";
+			} else if (number.includes("1")) {
+			translate = "Boop!";
 			} else if (number.includes("0")) {
 				translate = "Beep!";
-			} else if (number.includes("1")) {
-				translate = "Boop!";
 			} else{			
 				translate = number;
 			}	
