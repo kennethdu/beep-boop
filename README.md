@@ -1,6 +1,6 @@
 # _Beep Boop Translator_
 
-#### _Friday Independent project for Epicdous, 8.17.2018_
+#### _Friday Independent Project for Epicdous, 8.17.2018_
 
 #### By _**Kenneth Du**_
 
@@ -21,7 +21,8 @@ Break the program down into simple, individual behaviors with input/output examp
 ## Setup/Installation Requirements
 
 * Clone this repository
-* Open index.html file and type text to translate into Pig Latin.
+* Open index.html file 
+* Input a number in the text box to translate the number
 
 ## Specifications
 
