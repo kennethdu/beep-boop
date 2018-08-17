@@ -1,12 +1,22 @@
-# _Pig Latin Translator_
+# _Beep Boop Translator_
 
-#### _Html/CSS/jQuery Loop Exercise for Epicodus, 08.15.2018_
+#### _Friday Independent project for Epicdous, 8.17.2018_
 
-#### By _**Chan Lee, Kenneth Du**_
+#### By _**Kenneth Du**_
 
 ## Description
 
-_.This webpage suggest the best track in Epicodus in response to users answers. The three tracks include C#/.Net, CSS/React.js, Ruby/Rails. Back-end logic analyzes the frequency of the user's answers linked to relevant track and apply the information to optimize the suggestion._
+_.Create a web application that takes a number from a user and returns a range of numbers from 0 to the chosen number with the following exceptions:
+
+    Numbers that contain a 0 are replaced (all digits) with "Beep!"
+    Numbers that contain a 1 are replaced (all digits) with "Boop!"
+    Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."
+
+These exceptions are written from least to most important. The first exception should apply unless the second exception does, and the same with the second and third. So, for example, in your finished program the number 10 should be replaced with "Boop!", and the number 30 should be replaced with "I'm sorry, Dave. I'm afraid I can't do that."
+
+Also a user should be able to enter a new number and see new results over and over again.
+
+Break the program down into simple, individual behaviors with input/output examples. Begin with the simplest possible behavior. List these behaviors (also known as "specs" or "specifications") in the project's README.md file.._
 
 ## Setup/Installation Requirements
 
@@ -33,7 +43,7 @@ _There are no known bugs._
 
 ## Support and contact details
 
-_ChanEthanLee@gmail.com, kennethdu3@gmail.com_
+_kennethdu3@gmail.com_
 
 ## Technologies Used
 
@@ -41,4 +51,4 @@ _HTML, CSS, javaScript, jQuery, Bootstrap_
 
 ### License
 
-Copyright (c) 2018 **_Chan Lee_&_Kenneth_Du_**
+Copyright (c) 2018 **_Kenneth_Du_**
