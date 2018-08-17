@@ -1,40 +1,37 @@
-var translation = function(userInput) {
+var translation = function(input) {
 	
-	var splitInput = userInput.split();
+	var splitInput = input.split(); 
 	var result = [];
 	var translatedResults;
 		
 	splitInput.forEach(function(number) {
-		var translation = '';
+		var translate = '';
 			if (parseInt(number)% 3 === 0 && parseInt(number) > 0) {
-				translation = "I'm sorry, Dave. I'm afraid I can't do that.";
-			} else if (number.incldues("0")) {
-				translation = "Beep!";
+				translate = "I'm sorry, Dave. I'm afraid I can't do that.";
+			} else if (number.includes("0")) {
+				translate = "Beep!";
 			} else if (number.includes("1")) {
-				translation = "Boop!";
+				translate = "Boop!";
 			} else{			
-				translation = number;
+				translate = number;
 			}	
-			result.push(translation);
+			result.push(translate);
 	});
 	translatedResults = transString(result);
 	return translatedResults;
 };
 
 var transString = function (transInput) {
-	translatedResults = transInput.join("");
+	translatedResults = transInput.join("").toString();
 	return translatedResults;
 };
 
 	
 
 $(document).ready(function(){
-
 	$("form#formOne").submit(function(event){
 		event.preventDefault();
 		var userInput = $("#textInput").val();		 
 		translatedResults = translation(userInput);
 	});
-
-
 });
