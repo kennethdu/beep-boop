@@ -6,7 +6,7 @@ var translation = function(inputted){
 		
 	splitInput.forEach(function(number) {
 		var trans = '';
-			if (parseInt(number % 3 === 0 && parseInt(number !== 0)) {
+			if (parseInt(number)% 3 === 0 && parseInt(number) > 0) {
 				trans = "I'm sorry, Dave. I'm afraid I can't do that.";
 			}else if (number === "0") {
 				trans = "Beep!";
@@ -15,7 +15,7 @@ var translation = function(inputted){
 			}else{			
 				trans= number;
 			}	
-			translatedResults.push(trans);
+			result.push(trans);
 	});
 };
 
