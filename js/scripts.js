@@ -1,16 +1,16 @@
-var translation = function(inputted) {
+var translation = function(userInput) {
 	
-	var splitInput = inputted.split('');
+	var splitInput = userInput.split();
 	var result = [];
 	var translatedResults;
 		
 	splitInput.forEach(function(number) {
-		var translation = ('');
+		var translation = '';
 			if (parseInt(number)% 3 === 0 && parseInt(number) > 0) {
 				translation = "I'm sorry, Dave. I'm afraid I can't do that.";
-			} else if (number === "0") {
+			} else if (number.incldues("0")) {
 				translation = "Beep!";
-			} else if (number === "1") {
+			} else if (number.includes("1")) {
 				translation = "Boop!";
 			} else{			
 				translation = number;
