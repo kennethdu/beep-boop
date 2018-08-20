@@ -23,7 +23,7 @@ var translation = function(input) {
 };
 
 var transString = function (transInput) {
-	translatedResults = transInput.join("").toString();
+	translatedResults = transInput.join("");
 	return translatedResults;
 };
 
