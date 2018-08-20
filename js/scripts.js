@@ -13,13 +13,19 @@ var translation = function(input) {
 			translate = "Boop!";
 			} else if (number.includes("0")) {
 				translate = "Beep!";
-			} else{			
-				translate = number;
-			}	
-			result.push(translate);
-	});
+			// } else{
+				// var range = function (start, number) {
+					// for (i = 0 ; i <= number ; i++) {
+						// result.push[i];
+					
+				// translate = range;
+					// }
+				// };	
+			// result.push(translate);
+			// }; working on showing a range of numbers code not operationtional
 	translatedResults = transString(result);
 	return translatedResults;
+	});
 };
 
 var transString = function (transInput) {
