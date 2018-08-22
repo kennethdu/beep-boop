@@ -31,7 +31,7 @@ Break the program down into simple, individual behaviors with input/output examp
 | :-------------     | :------------- | :------------- |
 | **The program replaces 0 with "Beep!"** | Input: "0" | Output: "Beep!" |
 | **The program replaces 1 with "Boop!"** | Input: "10" | Output: "Boop!"|
-| **The program replaces all numbers divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that."** | Input: "9" | Output: "I'm sorry, Dave. I'm afraid I can't do that."|
+| **The program replaces all numbers divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that."** | Input: "9" | Output:"Beep! Boop! 2 I'm sorry, Dave. I'm afraid I can't do that 4 5 I'm sorry, Dave. I'm afraid I can't do that 7 8 I'm sorry, Dave. I'm afraid I can't do that Boop!"|
 | **The program returns the initial number if it does not meet the 3 conditions above.** | Input: "22" | Output: "22"|
 
 
