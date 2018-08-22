@@ -1,13 +1,13 @@
 var translatedResults = function(number) {
 	for (i = 0 ; i <= number ; i++) {
 		if (i % 3 === 0 && i !== 0) {
-			$(".result").append("Sorry Dave!");
+			$(".result").append(" " + "Sorry Dave!");
 		}else if (i.toString().includes("1")){
-			$(".result").append("Boop!");
+			$(".result").append(" " + "Boop!");
 		}else if (i.toString().includes("0")){
-			$(".result").append("Beep!");
+			$(".result").append(" " + "Beep!");
 		}else {
-			$(".result").append(i);
+			$(".result").append(" " + i);
 		}
 	};	
 };
@@ -15,11 +15,13 @@ var translatedResults = function(number) {
 	
 
 $(document).ready(function(){
+	
 	$("form#formOne").submit(function(event){
 		event.preventDefault();
 		var userInput = $("#textInput").val();
 		var userNumber = parseInt(userInput);
+		$(".result").text("");
 		var translate = translatedResults(userNumber);
-		$("#result").append(" " + translate + " ");
+		$("#textInput").val("");
 	});
 });
